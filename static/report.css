@@ -1,0 +1,77 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #d4d8d3;
+    min-height: 100vh;
+    background: url("image/report.webp") no-repeat center center/cover; 
+    background-attachment: fixed; 
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(6px); 
+    z-index: -1;
+}
+
+
+header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    padding: 10px;
+}
+
+.container {
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 700px;
+    padding: 30px;
+    text-align: left;
+    margin: 40px auto;
+    z-index: 1; 
+}
+
+h2 {
+    text-align: center;
+    color: #ffcc00; 
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+p {
+    font-size: 16px;
+}
+
+ul {
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+}

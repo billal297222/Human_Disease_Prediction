@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Prediction Report</title>
+    <link rel="stylesheet" href="{% static 'report.css' %}">
+</head>
+<body>
+    <!-- Main Content -->
+    <header>
+        <h1>Disease Prediction</h1>
+    </header>
+
+    <div class="container">
+        <h2>Report of Patient</h2>
+        <p><strong>Name of Patient:</strong> {{ Name }}</p><br>
+        <p><strong>Algorithm Used:</strong> {{ algo }}</p><br>
+        <p><strong>Predicted Disease:</strong> {{ prediction }}</p><br>
+        <p><strong>Disease Description:</strong></p>
+        <p>{{ discription }}</p><br>
+        <p><strong>Disease Precaution:</strong></p>
+        <ul>
+            <li>{{ pre1 }}</li>
+            <li>{{ pre2 }}</li>
+            <li>{{ pre3 }}</li>
+            <li>{{ pre4 }}</li>
+        </ul>
+    </div>
+
+</body>
+</html>
