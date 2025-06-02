@@ -38,21 +38,12 @@ All models are stored as `.pkl` files in the `trained_models/` directory.
 git clone https://github.com/your-username/DiseasePrediction.git
 cd DiseasePrediction
 
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
-
-```bash
- ## 1.git clone https://github.com/your-username/DiseasePrediction.git
-cd DiseasePrediction
-
-## 2. Install dependencies
+## 1. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 
-## 3. Run the project
+## 2. Run the project
 
 ```bash
 python manage.py runserver
